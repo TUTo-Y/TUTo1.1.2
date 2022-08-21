@@ -1,0 +1,363 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ZC DIALOG DISCARDABLE  0, 0, 132, 193
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "注册TUTo"
+FONT 12, "宋体"
+BEGIN
+    CTEXT           "欢迎创建TUTo1.1.2",IDC_STATIC,12,5,109,17,
+                    SS_CENTERIMAGE
+    LTEXT           "昵称:",IDC_STATIC,20,26,24,15,SS_CENTERIMAGE
+    EDITTEXT        TEXT1,55,28,56,13,ES_AUTOHSCROLL
+    LTEXT           "密码:",IDC_STATIC,20,46,24,15,SS_CENTERIMAGE
+    LTEXT           "再次输入：",IDC_STATIC,20,69,35,15,SS_CENTERIMAGE
+    EDITTEXT        TEXT2,55,48,56,13,ES_AUTOHSCROLL
+    EDITTEXT        TEXT3,55,70,56,13,ES_AUTOHSCROLL
+    LTEXT           "注:创建用户不连网,信息存储在本地,只限创建一个用户",
+                    IDC_STATIC,20,140,93,26
+    PUSHBUTTON      "创建",OK,20,167,35,15
+    PUSHBUTTON      "取消",NO,65,166,35,15
+    LTEXT           "设计问题:",IDC_STATIC,20,93,35,15,SS_CENTERIMAGE
+    LTEXT           "设计答案:",IDC_STATIC,20,117,35,15,SS_CENTERIMAGE
+    EDITTEXT        TEXT4,55,92,56,13,ES_AUTOHSCROLL
+    EDITTEXT        TEXT5,55,118,56,13,ES_AUTOHSCROLL
+END
+
+IDD_DL DIALOG DISCARDABLE  0, 0, 234, 108
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "TUTo登录"
+FONT 12, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "登录",OK,53,78,50,14
+    PUSHBUTTON      "退出",NO,119,78,50,14
+    LTEXT           "请输入密码",IDC_STATIC,13,41,42,12,SS_CENTERIMAGE
+    EDITTEXT        TEXT1,54,42,118,12,ES_CENTER | ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "忘记密码",WJ,175,40,37,13
+END
+
+IDD_MM DIALOG DISCARDABLE  0, 0, 233, 171
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "找回密码"
+FONT 12, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",OK,56,135,50,14
+    PUSHBUTTON      "取消",NO,126,134,50,14
+    CTEXT           "密码找回",IDC_STATIC,57,7,119,17,SS_CENTERIMAGE
+    CTEXT           "输入答案:",IDC_STATIC,57,52,36,17,SS_CENTERIMAGE
+    CTEXT           "输入密码:",IDC_STATIC,57,84,36,17,SS_CENTERIMAGE
+    CTEXT           "再次输入:",IDC_STATIC,57,108,36,17,SS_CENTERIMAGE
+    EDITTEXT        IDC_1,93,54,92,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_2,93,84,92,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_3,93,110,92,15,ES_AUTOHSCROLL
+    LTEXT           "",IDC_Text,72,25,92,23
+END
+
+IDD_MAIN DIALOGEX 0, 0, 364, 204
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_STATICEDGE
+CAPTION "TUTo1.1.2"
+FONT 12, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,
+                    7,179,128,9
+    CONTROL         "Progress1",IDC_PROGRESS2,"msctls_progress32",WS_BORDER,
+                    7,188,128,9
+    GROUPBOX        "用户",IDC_STATIC,7,7,121,49
+    CTEXT           "昵称:NULL",TEXT1,13,19,54,16,SS_CENTERIMAGE
+    CTEXT           "权限:NULL",TEXT4,69,35,53,13,SS_CENTERIMAGE
+    CTEXT           "状态:加载",TEXT2,69,19,53,16,SS_CENTERIMAGE
+    GROUPBOX        "TUTo加密2.5.6",BOOK,7,56,120,116
+    GROUPBOX        "功能包1.0",IDC_STATIC,130,7,227,49
+    GROUPBOX        "同学录1.2.0",IDC_STATIC,130,56,227,116
+    PUSHBUTTON      "简介",MAIN1,160,179,52,18
+    PUSHBUTTON      "帮助",MAIN2,232,179,52,18
+    PUSHBUTTON      "退出程序",MAIN3,305,179,52,18
+    CTEXT           "文件",IDC_STATIC,7,69,19,11,SS_CENTERIMAGE
+    EDITTEXT        JM,25,69,56,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "文件",JM1,82,69,21,12
+    PUSHBUTTON      "批量",JM2,103,69,21,12
+    PUSHBUTTON      "加密",JM3,82,81,21,12
+    PUSHBUTTON      "解密",JM4,103,81,21,12
+    LISTBOX         JM5,7,98,120,72,NOT LBS_NOTIFY | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "查看好友",IDC_BUTTON1,137,68,37,16
+    PUSHBUTTON      "添加好友",IDC_BUTTON6,192,68,37,16
+    PUSHBUTTON      "编辑好友",IDC_BUTTON7,307,68,37,16
+    PUSHBUTTON      "删除好友",IDC_BUTTON8,250,68,37,16
+    LISTBOX         IDC_LIST2,135,89,131,82,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "按分类查找好友",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,274,89,69,8
+    CONTROL         "分区",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,284,106,36,
+                    10
+    COMBOBOX        IDC_COMBO1,284,118,73,12,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "加入日期",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,284,
+                    136,46,8
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,284,148,73,15
+    EDITTEXT        CMD,162,19,70,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "修改",YHXG,13,35,54,13
+    PUSHBUTTON      "运行",CMD1,233,19,20,13
+    LTEXT           "命令行:",IDC_STATIC,135,19,30,13
+    PUSHBUTTON      "cmd",CMD2,254,19,20,13
+    CONTROL         "加/解密后关机",JM6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,85,63,8
+    CONTROL         "播放背景音乐",YY_XZ,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,135,35,60,9
+    PUSHBUTTON      "设置背景音乐",YY_XG,135,43,56,12
+END
+
+BZ DIALOGEX 0, 0, 365, 188
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+CAPTION "帮助"
+FONT 12, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",OK,158,167,50,14
+    GROUPBOX        "用户",IDC_STATIC1,7,7,167,62
+    GROUPBOX        "加密/解密",IDC_STATIC3,7,88,167,62
+    GROUPBOX        "同学录",IDC_STATIC4,191,88,167,62
+    GROUPBOX        "功能箱",IDC_STATIC2,191,7,167,62
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,199,100,53,44
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,13,100,53,44
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,199,19,53,44
+END
+
+JJ DIALOGEX 0, 0, 187, 221
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+CAPTION "简介"
+FONT 12, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",OK,67,200,50,14
+    CTEXT           "TUTo1.1.2",IDC_STATIC,43,7,103,22,SS_CENTERIMAGE
+    LTEXT           "程序没有过多的实验,有可能程序错误,请谅解",IDC_STATIC,47,
+                    79,103,19
+    LTEXT           "作者:初二七班-郑德泓",IDC_STATIC,47,41,103,11
+    LTEXT           "如想提出意见或建议,请联系作者",IDC_STATIC,47,113,103,22
+    LTEXT           "QQ:2219878724",IDC_STATIC,47,59,103,8
+    LTEXT           "信息加密只使用字符+1,-1的算法,文件加密则还要取反",
+                    IDC_STATIC,47,148,104,22
+END
+
+IDD_XX DIALOG DISCARDABLE  0, 0, 168, 193
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "用户信息修改"
+FONT 12, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "修改",OK,18,154,50,14
+    PUSHBUTTON      "取消",NO,92,154,50,14
+    LTEXT           "用户信息修改",IDC_STATIC,55,14,54,10
+    LTEXT           "昵称",IDC_STATIC,18,32,19,13
+    LTEXT           "密码",IDC_STATIC,18,56,19,13
+    LTEXT           "再次输入",IDC_STATIC,16,81,39,13
+    LTEXT           "问题",IDC_STATIC,18,102,19,13
+    LTEXT           "答案",IDC_STATIC,18,124,19,13
+    EDITTEXT        YH1,55,29,85,13,ES_AUTOHSCROLL
+    EDITTEXT        YH2,55,54,85,13,ES_AUTOHSCROLL
+    EDITTEXT        YH3,55,80,85,13,ES_AUTOHSCROLL
+    EDITTEXT        YH4,55,100,85,13,ES_AUTOHSCROLL
+    EDITTEXT        YH5,55,122,85,13,ES_AUTOHSCROLL
+END
+
+YY_XZ DIALOGEX 0, 0, 113, 138
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "保存",OK,7,117,50,14
+    PUSHBUTTON      "取消",NO,56,117,50,14
+    CONTROL         "使用默认背景音乐",XZ1,"Button",BS_AUTORADIOBUTTON,18,45,
+                    76,11
+    CONTROL         "添加背景音乐",XZ2,"Button",BS_AUTORADIOBUTTON,18,63,63,
+                    11
+    EDITTEXT        T,18,79,66,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "文件",XZ,86,78,20,12
+    LTEXT           "音乐播放格式只支持mp3",IDC_STATIC,18,97,88,11
+    LTEXT           "音量",IDC_STATIC,18,14,20,11
+    RADIOBUTTON     "大",HDK1,18,25,21,10
+    RADIOBUTTON     "中",HDK2,47,25,21,10
+    RADIOBUTTON     "小",HDK3,76,25,21,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ZC, DIALOG
+    BEGIN
+        VERTGUIDE, 20
+        VERTGUIDE, 55
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_DL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_MM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 226
+        VERTGUIDE, 57
+        VERTGUIDE, 93
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 164
+    END
+
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 357
+        VERTGUIDE, 13
+        VERTGUIDE, 67
+        VERTGUIDE, 71
+        VERTGUIDE, 103
+        VERTGUIDE, 135
+        VERTGUIDE, 284
+        VERTGUIDE, 354
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+        HORZGUIDE, 19
+        HORZGUIDE, 32
+        HORZGUIDE, 35
+        HORZGUIDE, 68
+        HORZGUIDE, 81
+        HORZGUIDE, 89
+        HORZGUIDE, 179
+    END
+
+    BZ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 358
+        VERTGUIDE, 13
+        VERTGUIDE, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+        HORZGUIDE, 88
+    END
+
+    JJ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        VERTGUIDE, 47
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_XX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 161
+        VERTGUIDE, 18
+        VERTGUIDE, 55
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+        HORZGUIDE, 154
+    END
+
+    YY_XZ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 106
+        VERTGUIDE, 18
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+        HORZGUIDE, 25
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// MP3
+//
+
+BJ.MP3                  MP3     DISCARDABLE     "1.mp3"
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
